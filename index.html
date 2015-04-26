@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Back Button Example</title>
+    <title>navigator.connection.type Example</title>
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
 
     // Wait for device API libraries to load
     //
-    document.addEventListener("deviceready",onDeviceReady,false);
+    document.addEventListener("deviceready", onDeviceReady, false);
 
     // device APIs are available
     //
     function onDeviceReady() {
-        // Register the event listener
-        document.addEventListener("backbutton", onBackKeyDown, false);
+         document.addEventListener("backbutton", onBackKeyDown, false);
     }
 
-    // Handle the back button
-    //
-    function onBackKeyDown() {
-    alert 'you clicked back';
-    }
+     function onBackKeyDown() {
+       alert('Nope');
+    }    
 
     </script>
   </head>
-  <button onclick= "onDeviceReady()">check Device</button> 
+  <body>
+    <p>A dialog box will report the network state.</p>
+  </body>
 </html>
